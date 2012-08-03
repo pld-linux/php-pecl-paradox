@@ -4,7 +4,7 @@ Summary:	read and write Paradox files
 Summary(pl.UTF-8):	odczyt i zapis z/do plików Paradox
 Name:		php-pecl-%{_modname}
 Version:	1.4.3
-Release:	3
+Release:	4
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
