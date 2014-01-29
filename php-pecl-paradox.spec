@@ -10,6 +10,7 @@ License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	aab0bc4146bc2852a9623b635fa20c17
+Patch0:		format-security.patch
 URL:		http://pecl.php.net/package/Paradox/
 BuildRequires:	%{php_name}-devel >= 3:5.0.0
 BuildRequires:	pxlib-devel >= 0.6.0
@@ -37,6 +38,7 @@ To rozszerzenie ma w PECL status: %{status}.
 %prep
 %setup -q -c
 mv %{modname}-%{version}/* .
+%patch0 -p1
 
 %build
 phpize

@@ -1,0 +1,15 @@
+--- php-pecl-paradox-1.4.3/paradox.c~	2007-09-25 14:12:42.000000000 +0200
++++ php-pecl-paradox-1.4.3/paradox.c	2014-01-29 19:50:50.751991267 +0100
+@@ -176,10 +176,10 @@
+ 		case PX_MemoryError:
+ 		case PX_IOError:
+ 		case PX_RuntimeError:
+-			php_error_docref(NULL TSRMLS_CC, E_ERROR, shortmsg);
++			php_error_docref(NULL TSRMLS_CC, E_ERROR, "%s", shortmsg);
+ 			break;
+ 		case PX_Warning:
+-			php_error_docref(NULL TSRMLS_CC, E_WARNING, shortmsg);
++			php_error_docref(NULL TSRMLS_CC, E_WARNING, "%s", shortmsg);
+ 			break;
+ 	}
+ }
