@@ -38,7 +38,7 @@ To rozszerzenie ma w PECL status: %{status}.
 %prep
 %setup -q -c
 mv %{modname}-%{version}/* .
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 phpize
